@@ -143,7 +143,24 @@ rosnode list                    # 노드 목록
 rqt_graph                       # 노드 시각화
 rosrun rqt_console rqt_console  # 로그 모니터링
 ```
+---
 
+## 📸 Day 2 실습 결과
+
+### 카운터 Publisher / Subscriber
+![카운터 발행 수신](구조13.PNG)
+
+### rqt_graph — 노드 연결 시각화
+![rqt_graph](구조12.PNG)
+
+### 랜덤 온도 센서 + 경고 시스템
+![온도 센서](구조14.PNG)
+
+### 거북이 원 그리기
+![거북이 원](구조15.PNG)
+
+### 거북이 벽 근처 경고
+![거북이 벽 경고](구조16.PNG)
 ---
 
 ## 👤 Author

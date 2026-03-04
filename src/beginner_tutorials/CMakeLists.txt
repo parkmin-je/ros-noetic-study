@@ -30,3 +30,11 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
+
+catkin_install_python(PROGRAMS
+  scripts/talker.py
+  scripts/listener.py
+  scripts/add_two_ints_server.py
+  scripts/add_two_ints_client.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

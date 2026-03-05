@@ -167,3 +167,22 @@ rosrun rqt_console rqt_console  # 로그 모니터링
 
 - **GitHub**: [@parkmin-je](https://github.com/parkmin-je)
 - **Email**: alswp6@naver.com
+---
+
+## Day 3 — ROS 서비스 프로그래밍
+
+### 실습 1 & 3: 문자열 길이 서비스 + 파라미터 계산기
+
+![calc-server](images/day3-calc-server.PNG)
+
+- `StringLength.srv` 정의 및 빌드
+- `string_length_server.py` / `string_length_client.py` 작성
+- `calc_server.py`: `/operator` 파라미터로 add/sub/mul 실시간 전환
+
+### 실습 2: turtlesim 펜 색상 변경
+
+![turtlesim-pen](images/day3-turtlesim-pen.PNG)
+
+- `/turtle1/set_pen` 서비스 호출로 펜 색상 변경
+- `change_pen_client.py` 작성 → 초록색 선 확인
+

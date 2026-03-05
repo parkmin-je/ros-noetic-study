@@ -186,3 +186,21 @@ rosrun rqt_console rqt_console  # 로그 모니터링
 - `/turtle1/set_pen` 서비스 호출로 펜 색상 변경
 - `change_pen_client.py` 작성 → 초록색 선 확인
 
+
+---
+
+## Day 3 — rosbag 데이터 기록 & 재생
+
+### rosbag record — 거북이 경로 기록
+
+![rosbag record 중 거북이 경로](screenshots/rosbag_record.png)
+
+### rosbag play — 재생 결과
+
+![rosbag play 재생 결과](screenshots/rosbag_play.png)
+
+- `rosbag record -a` 로 전체 토픽 기록
+- `rosbag play` 로 거북이 경로 재현
+- `pose_listener.py` 로 rosbag 재생 중 위치 데이터 수신 확인
+- 선택적 기록 비교: all_topics(106.6KB) vs cmd_only(7.8KB)
+

@@ -87,7 +87,7 @@ roslaunch beginner_tutorials service.launch
 
 #### 거북이 2마리 독립 제어
 
-![turtlesim 멀티 실행](turtlesim.PNG)
+![turtlesim 멀티 실행](images/turtlesim.PNG)
 ```bash
 roslaunch my_tutorial multi_turtle.launch
 ```
@@ -99,7 +99,7 @@ roslaunch my_tutorial multi_turtle.launch
 
 #### rqt_graph — 노드 관계 시각화
 
-![rqt_graph 노드 시각화](rqt_graph.PNG)
+![rqt_graph 노드 시각화](images/rqt_graph.PNG)
 ```bash
 roslaunch my_tutorial full_turtle.launch
 ```
@@ -148,19 +148,19 @@ rosrun rqt_console rqt_console  # 로그 모니터링
 ## 📸 Day 2 실습 결과
 
 ### 카운터 Publisher / Subscriber
-![카운터 발행 수신](구조13.PNG)
+![카운터 발행 수신](images/구조13.PNG)
 
 ### rqt_graph — 노드 연결 시각화
-![rqt_graph](구조12.PNG)
+![rqt_graph](images/구조12.PNG)
 
 ### 랜덤 온도 센서 + 경고 시스템
-![온도 센서](구조14.PNG)
+![온도 센서](images/구조14.PNG)
 
 ### 거북이 원 그리기
-![거북이 원](구조15.PNG)
+![거북이 원](images/구조15.PNG)
 
 ### 거북이 벽 근처 경고
-![거북이 벽 경고](구조16.PNG)
+![거북이 벽 경고](images/구조16.PNG)
 ---
 
 ## 👤 Author

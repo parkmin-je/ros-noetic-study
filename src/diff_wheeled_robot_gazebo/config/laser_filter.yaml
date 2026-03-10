@@ -1,0 +1,12 @@
+scan_filter_chain:
+  - name: left_wheel_filter
+    type: laser_filters/LaserScanAngularBoundsFilterInPlace
+    params:
+      lower_angle: 1.40
+      upper_angle: 1.75
+
+  - name: right_wheel_filter
+    type: laser_filters/LaserScanAngularBoundsFilterInPlace
+    params:
+      lower_angle: -1.75
+      upper_angle: -1.40

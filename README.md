@@ -237,8 +237,8 @@ roslaunch diff_wheeled_robot_gazebo diff_wheeled_corridor.launch
 #### 벽 추종 주행 상세
 [![wall_follower_corridor](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_corridor.png)](screenshots/day07/wall_follower_corridor.png)
 
-#### 코너 좌회전 순간
+
 [![wall_follower_turn](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_turn.png)](screenshots/day07/wall_follower_turn.png)
 
-#### 터미널 상태 로그
+
 [![wall_follower_log](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_log.png)](screenshots/day07/wall_follower_log.png)

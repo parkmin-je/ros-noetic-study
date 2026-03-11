@@ -204,3 +204,35 @@ rosrun rqt_console rqt_console  # 로그 모니터링
 - `pose_listener.py` 로 rosbag 재생 중 위치 데이터 수신 확인
 - 선택적 기록 비교: all_topics(106.6KB) vs cmd_only(7.8KB)
 
+
+---
+
+## Day 7 — Wall Follower (벽 추종 로봇)
+
+### 실습 내용
+- `corridor.world` 제작 — ㄱ자 복도 환경 구성
+- `wall_follower.py` 작성 — LiDAR 기반 오른쪽 벽 추종 알고리즘
+- 비례 제어(P control)로 벽과의 거리 유지
+- `diff_wheeled_corridor.launch` 로 통합 실행
+
+### 알고리즘 상태 머신
+
+| 상태 | 조건 | 동작 |
+|------|------|------|
+| find_wall | 우측 벽 없음 | 전진 + 우회전 |
+| follow_wall | 우측 벽 감지 | 전진 + P제어 |
+| turn_left | 전방 장애물 | 좌회전 |
+| emergency_stop | 전방 매우 가까움 | 정지 + 급회전 |
+
+### 실행 방법
+```
+roslaunch diff_wheeled_robot_gazebo diff_wheeled_corridor.launch
+```
+
+### 실습 결과
+
+#### Gazebo — corridor.world + 벽 추종 주행
+[![wall_follower_gazebo](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_gazebo.png)](screenshots/day07/wall_follower_gazebo.png)
+
+#### 벽 추종 주행 상세
+[![wall_follower_corridor](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_corridor.png)](screenshots/day07/wall_follower_corridor.png)

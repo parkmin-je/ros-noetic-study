@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="city_block">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <physics type="ode">
+      <max_step_size>0.004</max_step_size>
+      <real_time_update_rate>250</real_time_update_rate>
+    </physics>
+
+    <!-- 외벽 -->
+    <model name="wall_north"><static>true</static><pose>0 8 0.5 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>18 0.2 1</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>18 0.2 1</size></box></geometry></visual></link></model>
+
+    <model name="wall_south"><static>true</static><pose>0 -8 0.5 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>18 0.2 1</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>18 0.2 1</size></box></geometry></visual></link></model>
+
+    <model name="wall_east"><static>true</static><pose>8 0 0.5 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>0.2 16 1</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.2 16 1</size></box></geometry></visual></link></model>
+
+    <model name="wall_west"><static>true</static><pose>-8 0 0.5 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>0.2 16 1</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.2 16 1</size></box></geometry></visual></link></model>
+
+    <!-- 건물 4개 (단순 박스) -->
+    <model name="building_1"><static>true</static><pose>4 4 1 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>3 3 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>3 3 2</size></box></geometry>
+      <material><ambient>0.8 0.8 0.6 1</ambient></material></visual></link></model>
+
+    <model name="building_2"><static>true</static><pose>-4 4 1 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>3 3 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>3 3 2</size></box></geometry>
+      <material><ambient>0.6 0.7 0.8 1</ambient></material></visual></link></model>
+
+    <model name="building_3"><static>true</static><pose>4 -4 1 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>3 3 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>3 3 2</size></box></geometry>
+      <material><ambient>0.7 0.6 0.8 1</ambient></material></visual></link></model>
+
+    <model name="building_4"><static>true</static><pose>-4 -4 1 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>3 3 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>3 3 2</size></box></geometry>
+      <material><ambient>0.8 0.6 0.6 1</ambient></material></visual></link></model>
+
+    <!-- 장애물 3개 -->
+    <model name="obs_1"><static>true</static><pose>0 2 0.3 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>0.6 0.6 0.6</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.6 0.6 0.6</size></box></geometry>
+      <material><ambient>0.2 0.2 0.8 1</ambient></material></visual></link></model>
+
+    <model name="obs_2"><static>true</static><pose>2 -2 0.3 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>0.6 0.6 0.6</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.6 0.6 0.6</size></box></geometry>
+      <material><ambient>0.8 0.2 0.2 1</ambient></material></visual></link></model>
+
+    <model name="obs_3"><static>true</static><pose>-2 0 0.3 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>0.6 0.6 0.6</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.6 0.6 0.6</size></box></geometry>
+      <material><ambient>0.2 0.8 0.2 1</ambient></material></visual></link></model>
+
+  </world>
+</sdf>

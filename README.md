@@ -229,16 +229,3 @@ rosrun rqt_console rqt_console  # 로그 모니터링
 roslaunch diff_wheeled_robot_gazebo diff_wheeled_corridor.launch
 ```
 
-### 실습 결과
-
-#### Gazebo — corridor.world + 벽 추종 주행
-[![wall_follower_gazebo](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_gazebo.png)](screenshots/day07/wall_follower_gazebo.png)
-
-#### 벽 추종 주행 상세
-[![wall_follower_corridor](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_corridor.png)](screenshots/day07/wall_follower_corridor.png)
-
-
-[![wall_follower_turn](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_turn.png)](screenshots/day07/wall_follower_turn.png)
-
-
-[![wall_follower_log](https://github.com/parkmin-je/ros-noetic-study/raw/main/screenshots/day07/wall_follower_log.png)](screenshots/day07/wall_follower_log.png)

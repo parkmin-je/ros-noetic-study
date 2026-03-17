@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="test2">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <!-- 외벽 4개 -->
+    <model name="wall_bottom">
+      <static>true</static>
+      <pose>2 -1 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>8 0.1 1</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>8 0.1 1</size></box></geometry><material><ambient>0.7 0.7 0.7 1</ambient></material></visual>
+      </link>
+    </model>
+    <model name="wall_top">
+      <static>true</static>
+      <pose>2 5 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>8 0.1 1</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>8 0.1 1</size></box></geometry><material><ambient>0.7 0.7 0.7 1</ambient></material></visual>
+      </link>
+    </model>
+    <model name="wall_left">
+      <static>true</static>
+      <pose>-2 2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.1 6.1 1</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.1 6.1 1</size></box></geometry><material><ambient>0.7 0.7 0.7 1</ambient></material></visual>
+      </link>
+    </model>
+    <model name="wall_right">
+      <static>true</static>
+      <pose>6 2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.1 6.1 1</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.1 6.1 1</size></box></geometry><material><ambient>0.7 0.7 0.7 1</ambient></material></visual>
+      </link>
+    </model>
+
+    <!-- 중앙 사각 장애물 -->
+    <model name="center_obstacle">
+      <static>true</static>
+      <pose>2 2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>2 2 1</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>2 2 1</size></box></geometry><material><ambient>0.8 0.3 0.3 1</ambient></material></visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>
